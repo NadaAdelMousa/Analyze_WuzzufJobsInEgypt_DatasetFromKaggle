@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8" />
+<title>Home</title>
+</head>
+<style>
+    .data{
+    width: 20%;
+    font-size: 15px;
+    background-image: radial-gradient(rgb(109, 190, 201),rgb(109, 190, 201));
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px 10px;
+    margin: 3px 10px;
+    cursor: pointer;}
+    .charts{
+    width: 20%;
+    font-size: 15px;
+    background-image: radial-gradient(rgb(222, 214, 46),rgb(222, 214, 46));
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px 10px;
+    margin: 3px 10px;
+    cursor: pointer;}
+    .link{text-decoration: none; color: black;}
+    .headline{font-size: 20px; font-weight: bold;}
+</style>
+<body>
+	<div align="center">
+                <p class="headline"> Employment Stats in Egypt<br />(Based on Wuzzuf dataset)<br />(Intake42 AI-Pro SmartV Gr1 Team5)</p>
+		        <button class="data"><a class="link" th:href="@{/read-csv}">Show Dataset</a></button>
+                <button class="data"><a class="link" th:href="@{/structure-and-summary}">Show Summary & Structure</a></button>
+                <br /> 
+                <br />
+                <button class="data"><a class="link" th:href="@{/demanding-companies}">Most Demanding Companies</a></button>
+                <button class="charts"><a class="link" th:href="@{/displayPieChart}">Most Demanding Companies (Infographic)</a></button>
+                <br /> 
+                <br />
+                <button class="data"><a class="link" th:href="@{/job-titles}">Most Popular Job Titles</a></button>
+                <button class="charts"><a class="link" th:href="@{/displayBarChart1}">Most Popular Job Titles (Infographic)</a></button>
+                <br /> 
+                <br />
+                <button class="data"><a class="link" th:href="@{/areas}">Most Popular Areas</a></button>
+                <button class="charts"><a class="link" th:href="@{/displayBarChart2}">Most Popular Areas (Infographic)</a></button>
+                <br /> 
+                <br />
+                <button class="data"><a class="link" th:href="@{/skills}">Most Frequently Required Skills</a></button>
+                <button class="data"><a class="link" th:href="@{/Factorized-YOE-Min}">Dataset (factorized YOE _ Min YOE)</a></button>
+                <br />
+                <br />
+                <button class="data"><a class="link" th:href="@{/Factorized-YOE-One-Hot-encoding}">Dataset (factorized YOE _ One-Hot Encoding)</a></button>
+                <button class="data"><a class="link" th:href="@{/Factorized-YOE-Min-Max}">Dataset (factorized YOE _ Min-Max YOE)</a></button>
+                <br />
+                <br />
+                <button class="data"><a class="link" th:href="@{/Title-Company-K-means}">Dataset Title-Company K-means</a></button>
+
+    </div>
+</body>
+</html>
