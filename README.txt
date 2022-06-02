@@ -13,10 +13,3 @@ localhost:8030/skills
 localhost:8030/Factorized-YOE-Min
 localhost:8030/Factorized-YOE-One-Hot-encoding
 localhost:8030/Title-Company-K-means
-
-Team Members:
-
-Abdallah Mohamed Hamdy
-Emad Abdalghaffar
-Nada Adel AbdEl-azem Mousa
-Yossef Ibrahiem
